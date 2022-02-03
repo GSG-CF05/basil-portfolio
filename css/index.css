@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
 *{
   padding: 0;
   margin: 0;
@@ -5,11 +7,11 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Rowdies', cursive;
 }
 
 .container {
-  padding: 0 13%;
+  padding: 0 10%;
   width: 100%;
   height: 100%;
   display: flex;
@@ -21,23 +23,26 @@ body {
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 20px;
-  position: absolute;
+  padding: 10px 10%;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 1000;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  box-shadow: 0 0 5px 0px black;
+  border-radius: 5px;
 }
 
 header h1 {
   text-transform: uppercase;
   color: white;
   text-shadow: 0 0 20px black;
-  font-size: 40px;
+  font-size: 35px;
   background-color: #214c63;
-  padding: 2px 30px;
+  padding: 1px 30px;
   border-bottom-left-radius: 70%;
   border-bottom-right-radius: 50%;
   border-top-right-radius: 70%;
@@ -64,7 +69,7 @@ header nav ul li a {
   font-weight: bold;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 header nav ul li a:hover {
@@ -122,20 +127,20 @@ header nav ul li a:hover {
 }
 
 #home .content article span {
-  font-size: 30px;
+  font-size: 35px;
   color: #E8AA9B;
   text-transform: capitalize;
 }
 
 #home .content article h1 {
-  font-size: 50px;
+  font-size: 60px;
   text-transform: capitalize;
   margin: 10px 0;
 }
 
 #home .content article p {
   text-transform: capitalize;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
@@ -152,4 +157,111 @@ header nav ul li a:hover {
   display: flex;
   justify-content: center;
 }
+
 /* HOME SECTION STYLE END */
+
+/* ABOUT SECTION STYLE START */
+
+#about {
+  padding: 100px 0;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  box-shadow: 0 0 10px 0 black;
+}
+
+#about .container{
+  justify-content: space-evenly;
+}
+
+#about figure {
+  width: 40%;
+
+}
+#about figure img {
+  width: 80%;
+}
+
+#about article {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#about article h2 {
+  padding: 10px 0;
+  text-transform: capitalize;
+  color: white;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  font-size: 40px;
+  position: relative;
+}
+
+#about article h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 40%;
+  border-top: 5px solid #e9bcb7;
+  box-shadow: 0 0 10px 3px #28313b;
+}
+
+#about article p {
+  color: white;
+  opacity: 0.8;
+  text-transform: capitalize;
+  margin: 30px 0;
+  line-height: 1.5rem;
+}
+
+#about article table {
+  width: 100%;
+  border: 4px solid #e9bcb7;
+  padding: 15px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px 3px #28313b;
+}
+
+#about article table tbody tr td{
+  padding: 10px;
+}
+
+#about article table tbody tr td span {
+  margin-right: 10px;
+  opacity: 0.9;
+}
+
+#about article table tbody tr td label {
+  font-weight: 100;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+#about article a {
+  text-decoration: none;
+  color: white;
+  background-color: #dd7156;
+  border-radius: 10px;
+  font-weight: 500;
+  width: auto;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px 3px #28313b;
+  opacity: 0.8;
+}
+
+#about article a:hover {
+  padding: 11px;
+  background-color: #2c6a8b;
+  opacity: 1;
+}
+
+/* ABOUT SECTION STYLE END */
