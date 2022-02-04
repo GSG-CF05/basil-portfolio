@@ -344,8 +344,9 @@ header nav ul li a:hover {
 #contact {
   background-color: #6daddb;
   background-image: linear-gradient(315deg, #6daddb 0%, #313131 74%);
-  padding-top: 80px;
+  padding-top: 60px;
   height: 100vh;
+  padding-bottom: 10px;
 }
 
 #contact .container {
@@ -409,7 +410,7 @@ header nav ul li a:hover {
 #contact form textarea {
   width: 100%;
   margin: 15px 0;
-  height: 25%;
+  height: 15%;
   border-radius: 10px;
   padding: 10px;
   outline: 0;
@@ -432,3 +433,29 @@ header nav ul li a:hover {
   box-shadow: 0 0 5px 2px #313131;
 }
 /* CONTACT ME SECTION STYLE END */
+
+/* FOOTER STYLE START */
+
+footer {
+  padding: 80px 0;
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer h1 {
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
+footer h2 {
+  text-transform: capitalize;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* FOOTER STYLE END */
