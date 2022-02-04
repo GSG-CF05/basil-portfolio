@@ -338,3 +338,96 @@ header nav ul li a:hover {
 }
 
 /* SKILLS SECTION STYLE END */
+
+/* CONTACT ME SECTION STYLE START */
+
+#contact {
+  background-color: #6daddb;
+  background-image: linear-gradient(315deg, #6daddb 0%, #313131 74%);
+  padding-top: 80px;
+  height: 100vh;
+}
+
+#contact .container {
+  flex-direction: column;
+}
+
+#contact h2 {
+  font-size: 40px;
+  color: white;
+  opacity: 0.9;
+  text-transform: capitalize;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+#contact h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  border-bottom: 4px solid #e9bcb7;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+  margin-top: 20px;
+  height: 100%;
+}
+
+#contact form span {
+  width: 100%;
+  color: white;
+  opacity: 0.9;
+  text-transform: capitalize;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+#contact form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: 0;
+  box-shadow: 0 0 5px 2px #313131;
+  border: 0;
+}
+
+#contact form span label {
+  color: red;
+  font-size: 25px;
+}
+
+#contact form textarea {
+  width: 100%;
+  margin: 15px 0;
+  height: 25%;
+  border-radius: 10px;
+  padding: 10px;
+  outline: 0;
+  border: 0;
+  font-size: 16px;
+  box-shadow: 0 0 5px 2px #313131;
+}
+
+#contact form #btn {
+  width: 30%;
+  cursor: pointer;
+  background-color: #dd7156;
+  color: white;
+  box-shadow: 0 0 5px 2px #313131;
+  transition: all 0.3s ease-in-out;
+}
+#contact form #btn:hover {
+  transform: scale(0.95);
+  background-color: #567add;
+}
+/* CONTACT ME SECTION STYLE END */
