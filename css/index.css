@@ -429,5 +429,6 @@ header nav ul li a:hover {
 #contact form #btn:hover {
   transform: scale(0.95);
   background-color: #567add;
+  box-shadow: 0 0 5px 2px #313131;
 }
 /* CONTACT ME SECTION STYLE END */
