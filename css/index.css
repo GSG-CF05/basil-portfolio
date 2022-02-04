@@ -119,7 +119,7 @@ header nav ul li a:hover {
   width: 50%;
 }
 
-#home img {
+#home figure img {
   border-radius: 50%;
   height: 75%;
   border: 6px solid #E8AA9B;
@@ -146,10 +146,26 @@ header nav ul li a:hover {
 
 #home .content article ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   list-style: none;
-  width: 75%;
+  width: 50%;
+  margin-top: 20px;
+}
+
+#home ul li a {
+  width: 100%;
+  display: inline-block;
+}
+
+#home ul li a img {
+  width: 30%;
+  background-color: #E8AA9B;
+  border-radius: 10%;
+  transition: all 0.3s ease-in-out;
+}
+#home ul li a img:hover{
+  transform: scale(1.4);
 }
 
 #home .content figure {
@@ -265,3 +281,60 @@ header nav ul li a:hover {
 }
 
 /* ABOUT SECTION STYLE END */
+
+/* SKILLS SECTION STYLE START */
+
+#skills {
+  background-color: #000000;
+  background-image: linear-gradient(14deg, #000000 0%, #2c3e50 74%);
+  padding: 100px 0;
+}
+
+#skills .container {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#skills h2 {
+  font-size: 40px;
+  color: white;
+  opacity: 0.9;
+  text-transform: capitalize;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+#skills h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  border-bottom: 4px solid #e9bcb7;
+}
+
+#skills .container div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#skills article {
+  width: calc(80% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills article img {
+  width: 80%;
+}
+
+#skills article .b {
+  width: 65%;
+}
+
+/* SKILLS SECTION STYLE END */
